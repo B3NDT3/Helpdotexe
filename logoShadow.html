@@ -21,7 +21,44 @@ img {
   margin-top: 50px;
    width: 400px;
   height: 400px;
+    -moz-animation: heartbeat-loader 2300ms ease 0s infinite normal;
+  -webkit-animation: heartbeat-loader 2300ms ease 0s infinite normal;
+  animation: heartbeat-loader 2300ms ease 0s infinite normal;
 }
 
+@keyframes heartbeat-loader {
+  0% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  16% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  24% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  42% {
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  60% {
+    -moz-transform: scale(1);
+    -ms-transform: scale(1);
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+    
   </style>
 </html>
