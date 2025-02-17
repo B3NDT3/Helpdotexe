@@ -20,8 +20,8 @@ body {
   width: 1920px;
 }
 img {
-   animation: beat 6s infinite ease-in-out;
-  height: 200px;
+   animation: beat 6s infinite ease-in-out, lift 12s infinite ease-in-out;
+  height: 150px;
   width: auto;
 }
 @keyframes beat {
@@ -33,6 +33,18 @@ transform: scale(1.1);
 }
 100% {
 transform: scale(1);
+}
+}
+
+@keyframes lift {
+0% {
+transform: translate(0);
+}
+50%{
+transform: translate(20px);
+}
+100% {
+transform: translate(0);
 }
 }
   </style>
