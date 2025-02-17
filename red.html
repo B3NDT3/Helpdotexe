@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Help.exe</title>
+    <link rel="shortcut icon" type="image/x-icon" href="src/img/HdE_2.0_Logo-orange.svg">
+  </head>
+  <body >
+
+<img src="red.png">
+
+  </body>
+  <style>
+body {
+  display:flex;
+  justify-content: center;
+  align-items:center;
+  height: 1080px;
+  width: 1920px;
+}
+    
+img {
+   animation: beat 3s infinite ease-in-out;
+  height: 160px;
+  width: auto;
+}
+
+.container {
+  -moz-animation: lift 11s infinite ease-in-out;
+  -webkit-animation: lift 11s infinite ease-in-out;
+  animation: lift 11s infinite ease-in-out;
+}
+    
+@keyframes beat {
+0% {
+transform: scale(1);
+}
+50%{
+transform: scale(1.03);
+}
+100% {
+transform: scale(1);
+}
+}
+
+@keyframes lift {
+0% {
+transform: translate(0);
+}
+33%{
+transform: translate(6px,12px);
+}
+ 66%{
+transform: translate(8px,13px);
+}
+100% {
+transform: translate(0);
+}
+}
+
+  </style>
+</html>
